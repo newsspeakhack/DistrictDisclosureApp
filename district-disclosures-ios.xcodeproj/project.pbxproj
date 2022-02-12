@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CC599E4427B8028300A90A0C /* district_disclosures_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC599E4327B8028300A90A0C /* district_disclosures_iosApp.swift */; };
-		CC599E4627B8028300A90A0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC599E4527B8028300A90A0C /* ContentView.swift */; };
 		CC599E4827B8028400A90A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC599E4727B8028400A90A0C /* Assets.xcassets */; };
 		CC599E4B27B8028400A90A0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC599E4A27B8028400A90A0C /* Preview Assets.xcassets */; };
 		CC599E5527B8028400A90A0C /* district_disclosures_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC599E5427B8028400A90A0C /* district_disclosures_iosTests.swift */; };
 		CC599E5F27B8028400A90A0C /* district_disclosures_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC599E5E27B8028400A90A0C /* district_disclosures_iosUITests.swift */; };
 		CC599E6127B8028400A90A0C /* district_disclosures_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC599E6027B8028400A90A0C /* district_disclosures_iosUITestsLaunchTests.swift */; };
+		CC60410127B81B54008DBE0B /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = CC6040FF27B81B54008DBE0B /* locations.json */; };
+		CC60410227B81B54008DBE0B /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = CC60410027B81B54008DBE0B /* tips.json */; };
+		CC60410427B827A2008DBE0B /* ProblemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60410327B827A2008DBE0B /* ProblemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		CC599E4027B8028300A90A0C /* district-disclosures-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "district-disclosures-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC599E4327B8028300A90A0C /* district_disclosures_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = district_disclosures_iosApp.swift; sourceTree = "<group>"; };
-		CC599E4527B8028300A90A0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC599E4727B8028400A90A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC599E4A27B8028400A90A0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC599E5027B8028400A90A0C /* district-disclosures-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "district-disclosures-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		CC599E5A27B8028400A90A0C /* district-disclosures-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "district-disclosures-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC599E5E27B8028400A90A0C /* district_disclosures_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = district_disclosures_iosUITests.swift; sourceTree = "<group>"; };
 		CC599E6027B8028400A90A0C /* district_disclosures_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = district_disclosures_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC6040FF27B81B54008DBE0B /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = locations.json; path = Assets/locations.json; sourceTree = SOURCE_ROOT; };
+		CC60410027B81B54008DBE0B /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = tips.json; path = Assets/tips.json; sourceTree = SOURCE_ROOT; };
+		CC60410327B827A2008DBE0B /* ProblemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				CC599E4327B8028300A90A0C /* district_disclosures_iosApp.swift */,
-				CC599E4527B8028300A90A0C /* ContentView.swift */,
+				CC6040FF27B81B54008DBE0B /* locations.json */,
+				CC60410027B81B54008DBE0B /* tips.json */,
+				CC60410327B827A2008DBE0B /* ProblemView.swift */,
 				CC599E4727B8028400A90A0C /* Assets.xcassets */,
 				CC599E4927B8028400A90A0C /* Preview Content */,
 			);
@@ -232,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC599E4B27B8028400A90A0C /* Preview Assets.xcassets in Resources */,
+				CC60410227B81B54008DBE0B /* tips.json in Resources */,
+				CC60410127B81B54008DBE0B /* locations.json in Resources */,
 				CC599E4827B8028400A90A0C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC599E4627B8028300A90A0C /* ContentView.swift in Sources */,
+				CC60410427B827A2008DBE0B /* ProblemView.swift in Sources */,
 				CC599E4427B8028300A90A0C /* district_disclosures_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
