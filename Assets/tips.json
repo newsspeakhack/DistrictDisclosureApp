@@ -1,0 +1,18 @@
+[
+	{
+		"text": "How to vote",
+        "children": [
+            {
+                "text": "Please press the plus to upvote this community post."
+            }
+        ]
+	},
+	{
+		"text": "What will my local representative do?",
+        "children": [
+            {
+                "text": "Your local councillor or MP will be able to view this issue and your upvotes on it, and be able to match it up with any suggested solutions or design a new one."
+            }
+        ]
+	},
+]
