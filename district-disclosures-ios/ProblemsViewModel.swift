@@ -8,7 +8,7 @@
 import Foundation
 
 struct Response: Codable {
-    var results: [Result]
+    var results: [Problem]
 }
 
 struct Result: Codable {
@@ -19,35 +19,40 @@ struct Result: Codable {
 }
 
 struct Solution: Codable {
-    
-}
 
+}
+   
 class ProblemsViewModel:NSObject, ObservableObject {
-    @Published var problems = [Result]()
-//    @Published var solutions = 
-    
+    @Published var problems = [Problem]()
+    //@Published var solutions =
+  
+
     func loadProblems() async {
         guard let url = URL(string: "https://europe-west2-b33mo-310309.cloudfunctions.net/problems") else {
             print("Invalid URL")
             return
         }
-        
+
         do {
             print("trying url")
             let (data, _) = try await URLSession.shared.data(from: url)
             //            let str = String(decoding: data, as: UTF8.self)
             //            print(str)
+            print(data)
             if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
                 print("got a response")
                 print(decodedResponse)
                 problems = decodedResponse.results
             }
-            
+
         } catch {
-            print("Invalid data")
+            print(problems)
         }
     }
     
+    
+    
+    //original comments
 //    func loadSolutions() async {
 //        guard let url = URL(string: "https://europe-west2-b33mo-310309.cloudfunctions.net/solutions") else {
 //            print("Invalid URL")

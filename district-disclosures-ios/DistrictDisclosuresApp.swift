@@ -10,14 +10,20 @@ import SwiftUI
 @main
 struct DistrictDisclosuresApp: App {
     @StateObject var problems = Problems()
+    var problemsViewModel = ProblemsViewModel()
+    
 
     var body: some Scene {
         WindowGroup {
             TabView {
                 NavigationView {
-                    List(problems.issues, id: \.id) {issue in
-                        ProblemView(problem: issue)
+                    List(problemsViewModel.problems, id: \.id) { problem in
+                        ProblemView(problem: problem)
                     }
+                    .task {
+                        await problemsViewModel.loadProblems()
+                    }
+                    .navigationTitle("Problems")
                 }
                 .tabItem {
                     Image(systemName: "arrow.down")

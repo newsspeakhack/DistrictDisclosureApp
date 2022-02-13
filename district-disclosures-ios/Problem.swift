@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Problem: Decodable {
+struct Problem: Codable {
     let id: Int
     let title: String
     let borough: String
@@ -16,7 +16,7 @@ struct Problem: Decodable {
     let picture: String
     
     static let example = Problem(id: 1,
-                                  title: "Knife crime in Haringey",
+                                  title: "Knife crime in Canning Town",
                                   borough: "Tower Hamlets",
                                   description: "There have been various incidents of knife crime in my local area and nothing is being done about it.",
                                   upvotes: "3",
