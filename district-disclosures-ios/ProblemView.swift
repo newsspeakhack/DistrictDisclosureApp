@@ -8,29 +8,38 @@
 import SwiftUI
 
 struct ProblemView: View {
+    let problem: Problem
+    
     var body: some View {
-        ScrollView {
-        Image("tottenham-haringey")
+
+            Image(problem.picture)
             .resizable()
             .scaledToFit()
         
-        Text("Knife Crime in Tottenham Hale")
+            Text(problem.title)
                 .font(.largeTitle)
                 .bold()
                 .multilineTextAlignment(.center)
         
-        Text("Haringey")
-                .font(.title)
+            Text(problem.borough)
+                .font(.title3)
+                .bold()
                 .foregroundColor(.secondary)
         
-        Text("The toilet is never being cleaned and I’m tired of having to always do the cleaning myself.")
-        }
+            Text(problem.description)
+                .padding(.horizontal)
+        
+            Text(problem.upvotes)
+                .padding(.horizontal)
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ProblemView()
+        NavigationView{
+            ProblemView(problem: Problem.example)
+        }
     }
 }
 
