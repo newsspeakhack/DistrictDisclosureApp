@@ -427,7 +427,7 @@ struct NoSpaceList: View {
                     
                     VStack {
                         ForEach(data) { post in
-                            NavigationLink(destination:ProblemView()) {
+                            NavigationLink(destination:ProblemView(problem:Problem.example)) {
                                 HStack{
                                     HStack(alignment: .firstTextBaseline) {
                                         VStack(alignment: .leading) {
